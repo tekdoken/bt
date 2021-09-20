@@ -5,6 +5,21 @@
     <title>Title</title>
 </head>
 <body>
+<input id="ch" type="text">
+<button onclick="dd()">dịch sang Tiếng Việt</button>
+<p id="f"></p>
+<script>
+    let v = ['một', 'hai', 'ba'];
+    let e = ['one', 'two', 'three'];
+    function dd() {
+        let b = document.getElementById('ch').value
+        for (let a = 0; a < e.length; a++) {
+            if (b == e[a]) {
+                document.getElementById('f').innerHTML=('nghĩa là: '+v[a])
 
+            }
+        }
+    }
+</script>
 </body>
 </html>
