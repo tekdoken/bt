@@ -5,15 +5,19 @@
     <title>Title</title>
 </head>
 <body>
-<p id="aa"></p>
 <script>
-    let a =[1,4,7,2,8,12];
-    for (let i = 0;i<a.length;i++){
-        document.write(a[i]+'<br>')
-        if (a[i]%3==0){
-            document.write ('số chia hết cho 3 là : '+a[i])
+    let a = [1, 4, 7, 2, 8, 12];
+    let c = 0;
+    for (let i = 0; i < a.length; i++) {
+        document.write(a[i] + '<br>')
+        if (a[i] % 3 == 0) {
+            document.write('số chia hết cho 3 là : ' + a[i] + '<br>')
+        }
+        if (a[i] % 4 == 0) {
+            c += a[i]
         }
     }
+    document.write('tổng các số chia hết cho 4 là :' + c)
 </script>
 </body>
 </html>
