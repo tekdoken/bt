@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="aa"></p>
+<script>
+    let a =[1,4,7,2,8,12];
+    for (let i = 0;i<a.length;i++){
+        document.write(a[i]+'<br>')
+        if (a[i]%3==0){
+            document.getElementById('aa').innerHTML= ('số chia hết cho 3 là : '+a[i])
+        }
+    }
+</script>
+</body>
+</html>
