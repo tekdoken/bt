@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = +prompt();
+    let a = num.toString();
+    let k = [a[0]];
+
+    for (let x = 1; x < a.length; x++) {
+        if ((a[x - 1] % 2 === 0) && (a[x] % 2 === 0)) {
+            k.push('-', a[x]);
+        } else {
+            k.push(a[x]);
+        }
+    }
+    document.write(k.join(''));
+</script>
+</body>
+</html>
